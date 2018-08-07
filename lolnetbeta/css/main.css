@@ -72,7 +72,7 @@ a.socialbtn {
   transition: .3s;
 }
 a.socialbtn:hover {
-  color: #3E1022;
+  color: #d63272;
 }
 .rpad {
   padding-right: 0.3em;
@@ -86,8 +86,11 @@ canvas {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
 }
+a.btn-flat:hover {
+	color: #d63272;
+}
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #3E1022;/*#F9BEDE; - Pink *//*A58F39 - Darker Yellow*/
+  background-color: #d63272;/*#F9BEDE; - Pink *//*A58F39 - Darker Yellow*/
 }
 .btn:focus, .btn-large:focus, .btn-small:focus {
   background-color: #871A44;/*F9BEDE - Darker Yellow*/
