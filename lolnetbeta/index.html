@@ -8,13 +8,10 @@
     <meta name="keywords" content="NZ,NewZealand,New Zealand,New Zeland Minecraft Server,lolnet,Minecraft,Minecraft Server,bukkit,bungee,bungeecord,spigot,sponge">
     <meta name="author" content="lolnet.co.nz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
@@ -45,12 +42,16 @@
         <h4>New Zealand Gaming Community</h4>
         <p></p>
         <a class="waves-effect waves-light btn" href="https://forum.lolnet.co.nz">Forum</a>
+        <a class="waves-effect waves-light btn modal-trigger" href="#aboutus">About Us</a>
         <a class="waves-effect waves-light btn" href="https://wiki.lolnet.co.nz">Wiki</a>
         <a class="waves-effect waves-light btn" href="https://monitor.lolnet.co.nz">Server Status</a>
-        <a class="waves-effect waves-light btn modal-trigger" href="#votemodal">Vote</a>
-        <div id="votemodal" class="modal">
+        <a class="waves-effect waves-light btn modal-trigger" href="#vote">Vote</a>
+        <a class="waves-effect waves-light btn hideonmobile" href="https://forum.lolnet.co.nz/account/upgrades">Donate</a>
+        <a class="waves-effect waves-light btn hideonmobile modal-trigger" href="#launcher">Launcher</a>
+        <div id="vote" class="modal">
           <div class="modal-content">
             <h4>Vote for Lolnet</h4>
+            <p></p>
             <a class="waves-effect waves-light btn" href="http://ftbservers.com/server/bczd7aYN/vote">FTB Servers</a>
             <a class="waves-effect waves-light btn" href="http://minecraft-mp.com/server/2177/vote/">Minecraft-MP</a>
           </div>
@@ -59,7 +60,38 @@
             <a href="#!" class="modal-close waves-effect waves-light btn-flat" onclick="M.toast({html: 'Aww :('})">I Didn't</a>
           </div>
         </div>
-          
+        <div id="aboutus" class="modal">
+          <div class="modal-content">
+            <h4>The History of lolnet</h4>
+            <p>We started out as a private Minecraft server for some friends on a Pentium 4 with 2GB RAM and 160GB HDD, it was located in Christchurch on an ADSL line and started probably about December 2010.</p>
+            <p>In January 2011 I (CptWin) decided to open up the Minecraft Server and make it public as there was a need for a server based in New Zealand. I called it lolnet as that was the name of our wireless network at the time and it sounded cool and matched my favourite lolface logo. </p>
+            <p>We started out with the domain http://lolnet.dyndns.biz which is a free domain with dyndns.com and as word got out the server got busier and busier with a peak of about 1000 unique players in around 6-8 months. </p>
+            <p>We had a refresh in January 2012 and the server was moved from Christchurch to Auckland and new hardware was bought due to the generous Donations of a large number of our players!</p>
+            <p>The server was upgraded to a Core i3 3.1GHz with 8GB RAM and 3x1TB HDD in RAID 0 and we finally got a .co.nz and so lolnet.co.nz was created. At that point we we're serving around 400 players on the forums and 1200 players on our Minecraft Server.</p>
+            <p>Around May 2012 because of this increase in size we eventually moved the forums and Minecraft server into a dedicated cloud server which gives us the ability to scale the server up in power to host as many players as we want, which as of 5/09/2012 is 4740 Minecraft players and 2181 forum members!</p>
+            <p>August 2012 saw a wild Lord_Mega appear he hosted a Minecraft Tekkit Server on his EliteServer! (Core 2 Duo 1.8Ghz, 5GB RAM, 160GB HDD, ADSL2+)</p>
+            <p>January 2013 Dezil_NZ opened up a Feed the Beast Server.</p>
+            <p>31/01/2013 lolnet Minecraft is hosting for 10,835 unique players and 5028 forum members!</p>
+            <p>06/03/2013 lolnet Minecraft is hosting for 13,388 unique players and 6309 forum members!</p>
+            <p>27/07/2013 lolnet Minecraft is hosting for 19,106 unique players and 6924 forum members!</p>
+            <p>16/09/2015 lolnet Minecraft is hosting for 25,972 forum members!</p>
+            <p>lolnet and it's servers have always been free to play, and will always continue to be free to play!</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn-flat">Okay</a>
+          </div>
+        </div>
+        <div id="launcher" class="modal">
+          <div class="modal-content">
+            <h4>Lolnet Launcher</h4>
+            <p></p>
+            <a href="https://www.lolnet.co.nz/LolnetLauncher.exe" class="waves-effect waves-light btn"><i class="fab fa-windows rpad"></i>Windows</a>
+            <a href="https://www.lolnet.co.nz/LolnetLauncher.jar" class="waves-effect waves-light btn"><i class="fab fa-apple rpad"></i>Apple/Linux</a>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn-flat">Okay</a>
+          </div>
+        </div>
         <!-- <button class="waves-effect waves-light btn" onclick="votefunc()">Vote</button>
         <p>
         <div id="vote" style="display: none;">

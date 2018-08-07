@@ -1,9 +1,17 @@
 @media only screen and (max-width: 600px) { 
   .container {
     width: 95% !important;
+    top: 1.5% !important;
+    transform: translate(-50%, 0%) !important;
+  }
+  .social {
+  	font-size: 1.75em !important;
   }
   h3 {
     word-wrap: break-word;
+  }
+  .hideonmobile {
+  	display: none;
   }
 }
 .loader-background {
@@ -74,7 +82,7 @@ main {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   background: rgba(0, 0, 0, 0.5);
-  padding: 0em 0.2em;
+  padding: 0em 0.4em;
   position: fixed;
   bottom: 0%;
   left: 50%;
