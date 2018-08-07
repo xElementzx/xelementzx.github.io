@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lolnet.co.nz | New Zealand Gaming</title>
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to lolnet, the home of Minecraft Gaming and events in New Zealand! It's great to see you! Take a look around for some awesome news, events, and servers!">
+    <meta name="keywords" content="NZ,NewZealand,New Zealand,New Zeland Minecraft Server,lolnet,Minecraft,Minecraft Server,bukkit,bungee,bungeecord,spigot,sponge">
+    <meta name="author" content="lolnet.co.nz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container white-text center-align">
+        <img src="img/logo.png" height="35%" width="35%">
+        <h3>Lolnet.co.nz</h3>
+        <br>
+        <h4>New Zealand Gaming Community</h4>
+        <p>
+        <a class="waves-effect waves-light btn" href="https://forum.lolnet.co.nz">Forum</a>
+        <a class="waves-effect waves-light btn" href="https://wiki.lolnet.co.nz">Wiki</a>
+        <a class="waves-effect waves-light btn" href="https://monitor.lolnet.co.nz">Server Status</a>
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Vote</a>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Vote for Lolnet</h4>
+            <a class="waves-effect waves-light btn" href="http://ftbservers.com/server/bczd7aYN/vote">FTB Servers</a>
+            <a class="waves-effect waves-light btn" href="http://minecraft-mp.com/server/2177/vote/">Minecraft-MP</a>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn-flat" onclick="M.toast({html: 'Thanks for voting for Lolnet!'})">I voted</a>
+            <a href="#!" class="modal-close waves-effect waves-light btn-flat" onclick="M.toast({html: 'Aww :('})">I Didn't</a>
+          </div>
+        </div>
+          
+        <!-- <button class="waves-effect waves-light btn" onclick="votefunc()">Vote</button>
+        <p>
+        <div id="vote" style="display: none;">
+          <a class="waves-effect waves-light btn" href="http://ftbservers.com/server/bczd7aYN/vote">FTB Servers</a>
+          <a class="waves-effect waves-light btn" href="http://minecraft-mp.com/server/2177/vote/">Minecraft-MP</a>
+        </div> -->
+      </div>
+      <div class="social white-text center-align">
+        <a class="socialbtn" href="https://www.facebook.com/lolnetnz"><i class="fab fa-facebook-f rpad"></i></a>
+        <a class="socialbtn" href="https://steamcommunity.com/groups/LolnetNZ"><i class="fab fa-steam-symbol rpad"></i></a>
+        <a class="socialbtn" href="https://twitter.com/lolnetnz"><i class="fab fa-twitter rpad"></i></a>
+        <a class="socialbtn" href="https://www.youtube.com/lolnetnewzealand"><i class="fab fa-youtube"></i></a>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script>
+      function votefunc() {
+        console.log("called")
+        var x = document.getElementById("vote");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+          }
+        }
+      $.backstretch([
+        "img/bg1.jpg",
+        "img/bg2.jpg",
+        "img/bg3.jpg"
+      ], {
+        fade: 750,
+        duration: 4000
+      });
+      $('.dropdown-trigger').dropdown();
+      $(document).ready(function(){
+      $('.modal').modal();
+      });
+    </script>
+    </body>
+  </html>
+        
