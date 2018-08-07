@@ -1,10 +1,29 @@
 @media only screen and (max-width: 600px) { 
-    .container {
-         width: 95% !important;
-    }
-    h3 {
-         word-wrap: break-word;
-    }
+  .container {
+    width: 95% !important;
+  }
+  h3 {
+    word-wrap: break-word;
+  }
+}
+.loader-background {
+  display: flex;
+  align-items : center;
+  justify-content: center;
+  background-color: #23272A;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.loader-text {
+  position:absolute;
+  height: 35%;
+}
+.spinner {
+  border-color: #D63272;
 }
 body {
   margin: 0;
