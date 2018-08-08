@@ -35,7 +35,7 @@
     </div>
     </div>
     <main class="main">
-      <div class="container white-text center-align">
+      <div class="container white-text center-align" id="fixed">
         <img src="img/logo.png" height="35%" width="35%">
         <h3>Lolnet.co.nz</h3>
         <br>
@@ -131,7 +131,21 @@
         .delay(1500)
         .fadeOut();
       });
+      function roundCssTransformMatrix(element){
+        var el = document.getElementById(element);
+        el.style.transform=""; //resets the redifined matrix to allow recalculation, the original style should be defined in the class not inline.
+        var mx = window.getComputedStyle(el, null); //gets the current computed style
+        mx = mx.getPropertyValue("-webkit-transform") ||
+             mx.getPropertyValue("-moz-transform") ||
+             mx.getPropertyValue("-ms-transform") ||
+             mx.getPropertyValue("-o-transform") ||
+             mx.getPropertyValue("transform") || false;
+        var values = mx.replace(/ |\(|\)|matrix/g,"").split(",");
+        for(var v in values) { values[v]=v>4?Math.ceil(values[v]):values[v]; }
+
+        $("#"+element).css({transform:"matrix("+values.join()+")"});
+      }
+      $( document ).ready(function() { roundCssTransformMatrix("fixed"); });
     </script>
     </body>
   </html>
-        
